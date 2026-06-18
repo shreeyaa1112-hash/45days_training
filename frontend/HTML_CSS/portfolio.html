@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreya | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:
+radial-gradient(circle at top,#1b1b3a,#080813 65%);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+backdrop-filter:blur(15px);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+
+background:linear-gradient(
+90deg,
+#6df2ff,
+#9f7cff
+);
+
+-webkit-background-clip:text;
+color:transparent;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#6df2ff;
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+padding:50px;
+}
+
+.hero-content{
+
+max-width:1000px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:75px;
+
+background:
+linear-gradient(
+90deg,
+#6df2ff,
+#a855f7
+);
+
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+.hero h2{
+
+margin-top:10px;
+font-size:30px;
+
+color:#d8d8ff;
+
+}
+
+.hero p{
+
+margin-top:25px;
+line-height:1.8;
+font-size:18px;
+
+color:#cfcfe8;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:15px 40px;
+
+background:
+linear-gradient(
+90deg,
+#6df2ff,
+#9b5cff
+);
+
+border-radius:40px;
+
+color:black;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 0 40px #6df2ff;
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:80px 10%;
+
+}
+
+.title{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+color:#6df2ff;
+
+}
+
+/* CARDS */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(300px,1fr)
+);
+
+gap:30px;
+
+}
+
+.card{
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:
+blur(20px);
+
+padding:35px;
+
+border:
+
+1px solid rgba(255,255,255,.1);
+
+border-radius:25px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+
+0 0 40px
+rgba(110,230,255,.3);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#89f4ff;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+color:#ddddff;
+
+}
+
+/* SKILLS */
+
+.skills{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+.skill{
+
+padding:14px 24px;
+
+border-radius:50px;
+
+background:
+
+linear-gradient(
+90deg,
+#132f4c,
+#31245f
+);
+
+border:1px solid #6df2ff;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#999;
+
+}
+
+/* floating glow */
+
+.glow{
+
+position:fixed;
+
+width:600px;
+
+height:600px;
+
+background:#6df2ff;
+
+filter:blur(250px);
+
+opacity:.12;
+
+top:-200px;
+
+right:-100px;
+
+pointer-events:none;
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<nav>
+
+<div class="logo">
+SHREYA
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#qual">Qualification</a></li>
+
+<li><a href="#exp">Experience</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SHREYA</h1>
+
+<h2>
+BCA Student • Future Web Developer
+</h2>
+
+<p>
+
+Student of
+CT Institutions of Management and Technology
+
+with an interest in modern web development,
+programming and technology.
+
+Currently building projects and gaining
+industry experience.
+
+</p>
+
+<a href="#about" class="btn">
+
+Explore Portfolio
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">
+About Me
+</h2>
+
+<div class="card">
+
+<p>
+
+I am Shreya, currently pursuing
+Bachelor of Computer Applications (BCA)
+from CT Institutions of Management and Technology.
+
+I enjoy creating websites,
+learning programming concepts,
+and exploring modern technology.
+
+My goal is to strengthen my development skills
+through projects and practical experience.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- QUALIFICATION -->
+
+<section id="qual">
+
+<h2 class="title">
+
+Qualifications
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Bachelor of Computer Applications</h3>
+
+<p>
+
+CT Institutions of Management and Technology
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="exp">
+
+<h2 class="title">
+
+Experience
+
+</h2>
+
+<div class="card">
+
+<h3>
+
+Internship — Alpha IT Company, Mohali
+
+</h3>
+
+<p>
+
+Completed internship experience while
+learning practical software development
+and improving technical understanding.
+
+Worked with programming concepts
+and gained exposure to professional workflow.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="title">
+
+Programming Languages
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">C</div>
+
+<div class="skill">C++</div>
+
+<div class="skill">Python</div>
+
+<div class="skill">HTML</div>
+
+<div class="skill">CSS</div>
+
+<div class="skill">JavaScript</div>
+
+<div class="skill">Responsive Design</div>
+
+<div class="skill">Web Development</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 • Designed by Shreya
+
+</footer>
+
+</body>
+</html>
