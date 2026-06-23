@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const car={
+    name: "fiat",
+    model: 500,
+    color: "white",
+start: function() { console.log ("car started");},
+drive: function() { console.log ("car is driving");}
+};
+
+console.log(car.name);
+console.log(car.model);
+console.log(car.color);
+car.start();
+car.drive();
+car["drive"]();
+
+const person= { firstname: "shreya", lastname:" de luca", age: 20};
+document.write(person.firstname);
+document.write(person.lastname);
+
+    </script>
+</body>
+</html>

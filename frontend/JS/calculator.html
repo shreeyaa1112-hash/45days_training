@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+<div  style="background-color: lightblue;">
+
+    
+<div style="
+width:250px;
+height:50px;
+border:2px solid black;
+background-color:white;
+font-size:25px;
+padding-top:10px;
+margin-top:20px;
+text-align:center;
+" id="result">
+</div>
+
+
+<div style="background-color: grey;">
+    <h1>Simple calculator</h1>
+<button onclick="showAdd()">Addition</button><br><br>
+<button onclick="showSub()">Subtraction</button><br><br>
+<button onclick="showmul()">multiply</button><br><br>
+<button onclick="showdiv()">divide</button><br><br>
+</center>
+</div>
+
+<p id= "result"> </p>
+
+<script>
+
+function add(a,b,c){
+    return a+b+c;
+}
+
+
+function sub(a,b,c ){
+    return a-b-c;
+}
+
+function mul(a,b,c ){
+    return a*b*c;
+}
+
+function div(a,b,c ){
+    return a/b/c;
+}
+
+
+function showAdd(){
+    document.getElementById("result").innerHTML =
+    add(10,500020,30);
+}
+
+
+function showSub(){
+    document.getElementById("result").innerHTML =
+    sub(100,20,30);
+}
+
+function showmul(){
+    document.getElementById("result").innerHTML =
+    mul(100,20,30);
+}
+
+function showdiv(){
+    document.getElementById("result").innerHTML =
+    div(54,20,30);
+}
+
+
+    </script>
+    </div> 
+</body>
+</html>
